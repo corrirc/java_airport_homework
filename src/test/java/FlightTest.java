@@ -11,7 +11,7 @@ public class FlightTest {
     @Before
     public void before(){
         plane = new Plane(PlaneType.B737, Airline.RYANAIR);
-        flight = new Flight(plane, "FR123");
+        flight = new Flight(plane, "FR123", "Dublin");
     }
 
     @Test
@@ -22,5 +22,10 @@ public class FlightTest {
     @Test
     public void hasFlightNumber() {
         assertEquals("FR123", flight.getFlightNumber());
+    }
+
+    @Test
+    public void flightDestination() {
+        assertEquals("Dublin", flight.getFlightDestination());
     }
 }

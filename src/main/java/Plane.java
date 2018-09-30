@@ -4,13 +4,14 @@ public class Plane {
 
     private PlaneType planeType;
     private Airline airline;
+    private ArrayList<Passenger> passengers;
 
 
 
     public Plane(PlaneType planeType, Airline airline) {
         this.planeType = planeType;
         this.airline = airline;
-
+        this.passengers = new ArrayList<>();
     }
 
 
