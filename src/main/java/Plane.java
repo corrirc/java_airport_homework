@@ -24,6 +24,7 @@ public class Plane {
     }
 
 
-
-
+    public int numberOfPassengersOnPlane() {
+        return this.passengers.size();
+    }
 }
